@@ -1,0 +1,99 @@
+@import "./component";
+
+.container {
+  min-width: 100%; //full screen
+  padding: 0; //full screen
+  /* Opening */
+  .opening {
+    position: relative;
+    height: 100vh; //full screen
+    text-align: center;
+    background-color: black;
+    .typingText {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+      //background-image: url(https://i.gifer.com/TTSO.gif);
+      background-size: cover;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 4rem;
+      width: 100%;
+      padding: 4rem;
+    }
+    .flaticon-down-sketched-arrow {
+      opacity: 0;
+      font-size: 4rem;
+      bottom: 5%;
+      position: absolute;
+    }
+  }
+  /* About */
+  .about {
+    position: relative;
+    .intro {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 60vw;
+      z-index: 1;
+      margin-right: auto;
+      padding-left: 3rem;
+      h4 {
+        margin-bottom: 2rem;
+      }
+      h1 {
+        margin-bottom: 2rem;
+        font-weight: bold;
+        text-shadow: 0.5rem 0.5rem 0 $color6; //text shadow: should be px?
+      }
+      h3 {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: $accentTr;
+      }
+      .viewFullProfBtn {
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .photo {
+      width: 50vw;
+      text-align: right;
+      img {
+        width: 50vw;
+        overflow-y: hidden;
+      }
+    }
+    .fullProf {
+      position: absolute;
+      transform: translateX(-100%);
+      padding: 2rem 3rem;
+      .careerPanel {
+        ul {
+          list-style: none;
+          li {
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+      .backToAboutBtn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: 3rem;
+        text-align: right;
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
