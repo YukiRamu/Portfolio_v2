@@ -1,27 +1,32 @@
 /* color palette*/
 $accentTr: rgba(205, 115, 113, 0.745);
 $color1: #ffffff;
-$color2: #E5E5E5;
+$color2: #e5e5e5;
 $color3: #b56a16;
 $color4: #7a392c;
 $color5: rgb(167, 127, 117);
 $color6: #161c14;
 
+$color1Tr: #ffffffac;
+$color3Tr: #b56b16ab;
+$color5Tr: rgba(167, 127, 117, 0.745);
+
 /* basic styling */
 body {
   background-color: $color4;
   color: $color1;
- // font-family: "Open Sans", sans-serif;
- font-family: 'Montserrat', sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
 button {
   background-color: $color5;
-  color: $color2 ;
+  color: $color2;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
+  width: fit-content;
   &:hover {
     background-color: $color2;
     color: $color6;
@@ -31,7 +36,7 @@ button {
 a {
   text-decoration: none;
   color: $color1;
-  :hover {
+  &:hover {
     color: $color6;
   }
 }

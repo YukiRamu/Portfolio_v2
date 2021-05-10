@@ -73,7 +73,44 @@
       position: absolute;
       transform: translateX(-100%);
       padding: 2rem 3rem;
+      background-image: url(../img/bg1.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      h2 {
+        color: $color6;
+        font-weight: bold;
+        text-shadow: 0.5rem 0.5rem 0.3rem $color4; //text shadow: should be px?
+      }
+      h3 {
+        color: $color6;
+        font-weight: bold;
+        justify-content: space-between;
+        .backToAboutBtn {
+          margin-right: 2rem;
+          text-align: right;
+          width: fit-content;
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+      }
       .careerPanel {
+        padding: 1rem;
+        margin: 1rem;
+        border-left: 1rem $color4 solid;
+        &.odd {
+          background-color: $color5Tr;
+        }
+        &.even {
+          background-color: $color3Tr;
+        }
+        h4 {
+          span {
+            color: $color4;
+            font-weight: bold;
+          }
+        }
         ul {
           list-style: none;
           li {
@@ -83,13 +120,17 @@
           }
         }
       }
-      .backToAboutBtn {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: 3rem;
-        text-align: right;
+      .resumeLink {
+        margin: 1rem;
+        background-color: $accentTr;
+        color: $color2;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        width: fit-content;
+        &:hover {
+          background-color: $color4;
+        }
         i {
           margin-right: 0.5rem;
         }
