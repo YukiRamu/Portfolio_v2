@@ -20,28 +20,31 @@
       -moz-background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      font-size: 4rem;
+      //font-size: 4rem;
       width: 100%;
       padding: 4rem;
     }
     .flaticon-down-sketched-arrow {
       opacity: 0;
-      font-size: 4rem;
+      //font-size: 4rem;
       bottom: 5%;
       position: absolute;
     }
   }
   /* About */
   .about {
+    min-height: 100vh;
     position: relative;
     .intro {
-      position: absolute;
-      top: 10%;
-      left: 0;
-      width: 60vw;
+      width: 100vw;
+      padding: 1rem 1rem 1rem 2rem;
       z-index: 1;
       margin-right: auto;
-      padding-left: 3rem;
+      // position: absolute;  --- for laptop
+      // left: 0;  --- for laptop
+      // top: 10%; --- for laptop
+      // width: 60vw;  --- for laptop
+      // padding-left: 3rem;  --- for laptop
       h4 {
         margin-bottom: 2rem;
       }
@@ -62,13 +65,17 @@
       }
     }
     .photo {
-      width: 50vw;
-      text-align: right;
+      width: 100vw;
+      // width: 50vw; -- for laptop
+      // text-align: right; -- for laptop
       img {
-        width: 50vw;
+        width: 100vw;
+        padding: 1rem;
+        // width: 50vw; -- for laptop
         overflow-y: hidden;
       }
     }
+    /* full profile*/
     .fullProf {
       position: absolute;
       transform: translateX(-100%);
@@ -77,15 +84,18 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      min-height: 100vh;
       h2 {
         color: $color6;
         font-weight: bold;
         text-shadow: 0.5rem 0.5rem 0.3rem $color4; //text shadow: should be px?
+        margin-bottom: 2rem;
       }
       h3 {
         color: $color6;
         font-weight: bold;
         justify-content: space-between;
+        margin-bottom: 2rem;
         .backToAboutBtn {
           margin-right: 2rem;
           text-align: right;
@@ -97,7 +107,9 @@
       }
       .careerPanel {
         padding: 1rem;
-        margin: 1rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
         border-left: 1rem $color4 solid;
         &.odd {
           background-color: $color5Tr;
@@ -126,7 +138,7 @@
         color: $color2;
         border: none;
         padding: 0.5rem 1rem;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
         width: fit-content;
         &:hover {
           background-color: $color4;

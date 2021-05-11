@@ -1,6 +1,7 @@
 /* color palette*/
 /* basic styling */
 body {
+  font-size: clamp(12px, calc(0.7rem + 0.4vw), 20px);
   background-color: #7a392c;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -12,7 +13,6 @@ button {
   color: #e5e5e5;
   border: none;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -32,6 +32,7 @@ a:hover {
   color: #161c14;
 }
 
+/*Media Query - mobile first breakpoints*/
 .container {
   min-width: 100%;
   padding: 0;
@@ -57,30 +58,27 @@ a:hover {
   -moz-background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 4rem;
   width: 100%;
   padding: 4rem;
 }
 
 .container .opening .flaticon-down-sketched-arrow {
   opacity: 0;
-  font-size: 4rem;
   bottom: 5%;
   position: absolute;
 }
 
 .container .about {
+  min-height: 100vh;
   position: relative;
+  /* full profile*/
 }
 
 .container .about .intro {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  width: 60vw;
+  width: 100vw;
+  padding: 1rem 1rem 1rem 2rem;
   z-index: 1;
   margin-right: auto;
-  padding-left: 3rem;
 }
 
 .container .about .intro h4 {
@@ -104,12 +102,12 @@ a:hover {
 }
 
 .container .about .photo {
-  width: 50vw;
-  text-align: right;
+  width: 100vw;
 }
 
 .container .about .photo img {
-  width: 50vw;
+  width: 100vw;
+  padding: 1rem;
   overflow-y: hidden;
 }
 
@@ -122,12 +120,14 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .container .about .fullProf h2 {
   color: #161c14;
   font-weight: bold;
   text-shadow: 0.5rem 0.5rem 0.3rem #7a392c;
+  margin-bottom: 2rem;
 }
 
 .container .about .fullProf h3 {
@@ -136,6 +136,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .container .about .fullProf h3 .backToAboutBtn {
@@ -152,7 +153,9 @@ a:hover {
 
 .container .about .fullProf .careerPanel {
   padding: 1rem;
-  margin: 1rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-left: 1rem #7a392c solid;
 }
 
@@ -183,7 +186,6 @@ a:hover {
   color: #e5e5e5;
   border: none;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
