@@ -8,7 +8,7 @@
     position: relative;
     height: 100vh; //full screen
     text-align: center;
-    background-color: black;
+    background-color: $black;
     .typingText {
       position: absolute;
       top: 45%;
@@ -20,15 +20,19 @@
       -moz-background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      //font-size: 4rem;
+      //font-size: 4rem; ---for laptop
       width: 100%;
       padding: 4rem;
+      font-size: 2rem;
     }
     .flaticon-down-sketched-arrow {
       opacity: 0;
-      //font-size: 4rem;
-      bottom: 5%;
+      //font-size: 4rem; ---for laptop
       position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
     }
   }
   /* About */

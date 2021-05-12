@@ -6,6 +6,7 @@ $color3: #b56a16;
 $color4: #7a392c;
 $color5: rgb(167, 127, 117);
 $color6: #161c14;
+$black: black;
 
 $color1Tr: #ffffffac;
 $color3Tr: #b56b16ab;
@@ -47,7 +48,7 @@ a {
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px)  {  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  }

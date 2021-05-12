@@ -60,12 +60,17 @@ a:hover {
   color: transparent;
   width: 100%;
   padding: 4rem;
+  font-size: 2rem;
 }
 
 .container .opening .flaticon-down-sketched-arrow {
   opacity: 0;
-  bottom: 5%;
   position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2rem;
 }
 
 .container .about {
