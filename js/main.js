@@ -62,7 +62,7 @@ viewFullProfBtn.addEventListener("click", () => {
   photo.style.opacity = "0";
   photo.style.transform = "translateY(165%)";
   photo.style.transition = "1s linear";
-  fullProf.style.transform = "translateX(0%)"
+  fullProf.style.transform = "translateX(1%)"
   fullProf.style.transition = "1s linear";
 });
 
@@ -70,7 +70,7 @@ viewFullProfBtn.addEventListener("click", () => {
 backToAboutBtn.addEventListener("click", () => {
   smoothScroll("intro");
   navBar.style.opacity="1";
-  intro.style.transform = "translateX(0%)";
+  intro.style.transform = "translateX(-1%)";
   intro.style.opacity = "1";
   intro.style.transition = "1s linear";
   photo.style.transform = "translateY(0%)";

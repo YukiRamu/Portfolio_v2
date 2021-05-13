@@ -1,7 +1,8 @@
 @import "./component";
 
 .container {
-  min-width: 100%; //full screen
+  // min-width: 100%; //full screen
+  width: 100%;
   padding: 0; //full screen
   overflow-x: hidden;
   /*Nav bar*/
@@ -41,7 +42,7 @@
       //font-size: 4rem; ---for laptop
       width: 100%;
       padding: 4rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .flaticon-down-sketched-arrow {
       opacity: 0;
@@ -56,8 +57,10 @@
   /* About */
   .about {
     min-height: 100vh;
+    width: 100%;
     position: relative;
     padding-top: 10%;
+    margin: 0;
     .intro {
       width: 100vw;
       padding: 1rem 1rem 1rem 2rem;
@@ -92,7 +95,7 @@
       // width: 50vw; -- for laptop
       // text-align: right; -- for laptop
       img {
-        width: 100vw;
+        width: 100%;
         padding: 1rem;
         // width: 50vw; -- for laptop
         overflow-y: hidden;
