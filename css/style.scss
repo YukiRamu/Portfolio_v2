@@ -1,8 +1,8 @@
 @import "./component";
 
 .container {
-  // min-width: 100%; //full screen
-  width: 100%;
+  min-width: 100%; //full screen
+  //width: 100%;
   padding: 0; //full screen
   overflow-x: hidden;
   /*Nav bar*/
@@ -12,7 +12,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 5%;
+    height: fit-content;
     background-color: $color5;
     z-index: 2;
     opacity: 0;
@@ -54,16 +54,21 @@
       font-size: 2rem;
     }
   }
-  /* About */
-  .about {
+  /* main sections*/
+  .about,
+  .skills,
+  .work,
+  .contact {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    padding-top: 10%;
     margin: 0;
+  }
+  /* About */
+  .about {
     .intro {
-      width: 100vw;
-      padding: 1rem 1rem 1rem 2rem;
+      width: 100%;
+      padding: 1rem 1rem 1rem 1rem;
       z-index: 1;
       margin-right: auto;
       // position: absolute;  --- for laptop
@@ -91,7 +96,7 @@
       }
     }
     .photo {
-      width: 100vw;
+      width: 100%;
       // width: 50vw; -- for laptop
       // text-align: right; -- for laptop
       img {
@@ -172,6 +177,72 @@
         }
         i {
           margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  /* Skills */
+  .skills {
+    background-image: url(../img/bg2.jpg);
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+      //color: $color6;
+      margin: 1rem 0;
+      font-weight: bold;
+      text-shadow: 0.5rem 0.5rem 0.1rem $color6; //text shadow: should be px?
+      text-align: center;
+      font-weight: bold;
+    }
+    .card {
+      position: relative;
+      display: block;
+      margin: 1rem;
+      border: none;
+      padding: 1rem;
+      background-color: $color7Tr;
+      height: 20vh;
+      border-left: 1rem $color4 solid;
+      text-align: center;
+      h3 {
+        color: $color4;
+        font-weight: bold;
+      }
+      i {
+        font-size: 3em;
+      }
+    }
+    .frontEnd {
+      .skillIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
+    }
+    .devTool {
+      background-color: $color3Tr;
+      .toolIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
+    }
+    .deployment {
+      ul {
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        li {
+          color: $black;
         }
       }
     }

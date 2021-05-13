@@ -1,5 +1,9 @@
 /* color palette*/
 /* basic styling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: clamp(12px, calc(0.7rem + 0.4vw), 20px);
   background-color: #7a392c;
@@ -34,12 +38,14 @@ a:hover {
 
 /*Media Query - mobile first breakpoints*/
 .container {
-  width: 100%;
+  min-width: 100%;
   padding: 0;
   overflow-x: hidden;
   /*Nav bar*/
   /* Opening */
+  /* main sections*/
   /* About */
+  /* Skills */
 }
 
 .container .nav {
@@ -53,7 +59,9 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #a77f75;
   z-index: 2;
   opacity: 0;
@@ -96,18 +104,23 @@ a:hover {
   font-size: 2rem;
 }
 
-.container .about {
+.container .about,
+.container .skills,
+.container .work,
+.container .contact {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  padding-top: 10%;
   margin: 0;
+}
+
+.container .about {
   /* full profile*/
 }
 
 .container .about .intro {
-  width: 100vw;
-  padding: 1rem 1rem 1rem 2rem;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
   z-index: 1;
   margin-right: auto;
 }
@@ -133,7 +146,7 @@ a:hover {
 }
 
 .container .about .photo {
-  width: 100vw;
+  width: 100%;
 }
 
 .container .about .photo img {
@@ -196,7 +209,7 @@ a:hover {
 }
 
 .container .about .fullProf .careerPanel.even {
-  background-color: #b56b16ab;
+  background-color: #b56b169d;
 }
 
 .container .about .fullProf .careerPanel h4 span {
@@ -229,5 +242,78 @@ a:hover {
 
 .container .about .fullProf .resumeLink i {
   margin-right: 0.5rem;
+}
+
+.container .skills {
+  background-image: url(../img/bg2.jpg);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .skills h2 {
+  margin: 1rem 0;
+  font-weight: bold;
+  text-shadow: 0.5rem 0.5rem 0.1rem #161c14;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .skills .card {
+  position: relative;
+  display: block;
+  margin: 1rem;
+  border: none;
+  padding: 1rem;
+  background-color: #fadb8cbe;
+  height: 20vh;
+  border-left: 1rem #7a392c solid;
+  text-align: center;
+}
+
+.container .skills .card h3 {
+  color: #7a392c;
+  font-weight: bold;
+}
+
+.container .skills .card i {
+  font-size: 3em;
+}
+
+.container .skills .frontEnd .skillIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container .skills .devTool {
+  background-color: #b56b169d;
+}
+
+.container .skills .devTool .toolIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container .skills .deployment ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container .skills .deployment ul li {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
