@@ -1,7 +1,8 @@
+/* Variables */
 //opening
-const openingSection = document.querySelector(".opening")
+const openingSection = document.querySelector(".opening");
 const typingText = document.querySelector(".typingText");
-const text = "Once upon a time there was a passionate front-end developer who loved creating innovative websites, making people smile and happy. This is a story of her life." //160 char
+const text = "Once upon a time there was a passionate front-end developer who loved creating innovative websites, making people smile and happy. This is a story of her life."; //160 char
 const arrow = document.querySelector(".arrow");
 const intro = document.querySelector(".intro");
 const photo = document.querySelector(".photo");
@@ -9,6 +10,10 @@ const fullProf = document.querySelector(".fullProf");
 const viewFullProfBtn = document.querySelector(".viewFullProfBtn");
 const backToAboutBtn = document.querySelector(".backToAboutBtn");
 
+//nav bar
+const navBar = document.querySelector(".nav");
+
+/* Opening */
 let count = 0;
 const typeWriter = () => {
   typingText.innerHTML += text.charAt(count);
@@ -27,18 +32,30 @@ const completeOpening = () => {
   typingText.style.transition = "1s linear";
   arrow.style.opacity = "1";
   arrow.style.transition = "1s linear";
+  navBar.style.opacity="1";
 };
 
-let timer = setInterval(typeWriter, 50); //typeWriterを50msごとに実行
+let timer = setInterval(typeWriter, 50); 
 
 //when the page is loaded
 window.addEventListener("DOMContentLoaded", () => {
   typeWriter();
-  setTimeout(completeOpening, 10000);
+  setTimeout(completeOpening, 9000);
 });
+
+/* About */
+// smooth scroll to the section
+const smoothScroll = (id) => {
+  let scrollTo = document.getElementById(`${id}`);
+  scrollTo.scrollIntoView(({
+    behavior: "smooth"
+  }), true); // to top
+};
 
 //"see full profile" button clicked
 viewFullProfBtn.addEventListener("click", () => {
+  smoothScroll("fullProf");
+  navBar.style.opacity="0";
   intro.style.transform = "translateX(165%)";
   intro.style.opacity = "0";
   intro.style.transition = "1s linear";
@@ -51,6 +68,8 @@ viewFullProfBtn.addEventListener("click", () => {
 
 //"Back" buton clicked
 backToAboutBtn.addEventListener("click", () => {
+  smoothScroll("intro");
+  navBar.style.opacity="1";
   intro.style.transform = "translateX(0%)";
   intro.style.opacity = "1";
   intro.style.transition = "1s linear";

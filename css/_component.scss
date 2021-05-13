@@ -1,16 +1,16 @@
 /* color palette*/
-$accentTr: rgba(205, 115, 113, 0.745);
+$accentTr: #cd7371be;
 $color1: #ffffff;
 $color2: #e5e5e5;
 $color3: #b56a16;
 $color4: #7a392c;
-$color5: rgb(167, 127, 117);
+$color5: #a77f75;
 $color6: #161c14;
 $black: black;
 
 $color1Tr: #ffffffac;
 $color3Tr: #b56b16ab;
-$color5Tr: rgba(167, 127, 117, 0.745);
+$color5Tr: #a77f75be;
 
 /* basic styling */
 body {
@@ -48,16 +48,21 @@ a {
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px)  {  }
+@media (min-width: 576px) {
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) {
+}
