@@ -1,5 +1,3 @@
-
-
 //opening
 const openingSection = document.querySelector(".opening")
 const typingText = document.querySelector(".typingText");
