@@ -23,6 +23,7 @@ const skillSection = document.querySelector(".skills");
 
 //work
 const workSection = document.querySelector(".work");
+const projectImg = document.querySelector(".projectImg");
 
 //contact
 const contactSection = document.querySelector(".contact");
@@ -79,7 +80,7 @@ viewFullProfBtn.addEventListener("click", () => {
   //hide all sections
   navBar.style.display = "none";
   openingSection.style.display = "none";
-  // fullProf.style.display = "block";
+  //introduction.style.display = "none";
   skillSection.style.display = "none";
   workSection.style.display = "none";
   contactSection.style.display = "none";
@@ -90,29 +91,42 @@ viewFullProfBtn.addEventListener("click", () => {
   photo.style.opacity = "0";
   photo.style.transform = "translateY(165%)";
   photo.style.transition = "1s linear";
-  fullProf.style.transform = "translateX(1%)"
+  fullProf.style.transform = "translateX(1%)";
   fullProf.style.transition = "1s linear";
+  //clear padding top
+  aboutSection.style.paddingTop = "0";
 });
 
 //"Back" buton clicked
 backToAboutBtn.addEventListener("click", () => {
   smoothScroll("intro");
-  //show all sections
-  //navBar.style.opacity = "1";
 
-  // openingSection.style.display = "block";
-  // skillSection.style.display = "flex";
+  //show all sections
+  navBar.style.display = "flex";
+  navBar.style.opacity = "1";
+  // introduction.style.display = "block";
+  skillSection.style.display = "block";
+  workSection.style.display = "block";
+  contactSection.style.display = "block";
   // workSection.style.display = "flex";
   // contactSection.style.display = "flex";
+
   //slide back to about sections
   intro.style.transform = "translateX(-1%)";
   intro.style.opacity = "1";
-  intro.style.transition = "1s linear";
+  intro.style.transition = "1.5s linear";
   photo.style.transform = "translateY(0%)";
   photo.style.opacity = "1";
-  photo.style.transition = "1s linear";
-  fullProf.style.transform = "translateX(-100%)"
-  fullProf.style.transition = "1s linear";
+  photo.style.transition = "1.5s linear";
+  fullProf.style.transform = "translateX(-100%)";
+  fullProf.style.transition = "1.5s linear";
+  //add padding top
+  aboutSection.style.paddingTop = "30px";
 });
 
+/* ========= Work ========= */
+projectImg.addEventListener("click", () => {
+  //show modal
+  console.log("image clicked");
+});
 

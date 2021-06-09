@@ -37,6 +37,10 @@ a:hover {
 }
 
 /*Media Query - mobile first breakpoints*/
+body.modal-active {
+  overflow: hidden;
+}
+
 .container {
   min-width: 100%;
   padding: 0;
@@ -46,6 +50,7 @@ a:hover {
   /* main sections*/
   /* About */
   /* Skills */
+  /* Work */
 }
 
 .container .nav {
@@ -59,9 +64,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 30px;
   background-color: #a77f75;
   z-index: 2;
   opacity: 0;
@@ -265,7 +268,7 @@ a:hover {
   margin: 1rem;
   border: none;
   padding: 1rem;
-  background-color: #fadb8cbe;
+  background-color: #b56b169d;
   height: 20vh;
   border-left: 1rem #7a392c solid;
   text-align: center;
@@ -290,7 +293,7 @@ a:hover {
 }
 
 .container .skills .devTool {
-  background-color: #b56b169d;
+  background-color: #fadb8cbe;
 }
 
 .container .skills .devTool .toolIcon {
@@ -315,5 +318,97 @@ a:hover {
 
 .container .skills .deployment ul li {
   color: black;
+}
+
+.container .work {
+  /* default*/
+  /* when hovered*/
+}
+
+.container .work h2 {
+  margin: 1rem 0;
+  font-weight: bold;
+  text-shadow: 0.5rem 0.5rem 0.1rem #161c14;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .work .projectImg {
+  margin: auto;
+  margin-bottom: 1rem;
+  grid-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.container .work .projectImg img {
+  display: block;
+}
+
+.container .work .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.container .work .modal .modal-content {
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.71);
+}
+
+.container .work .modal .modal-content .techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.container .work .modal .modal-content .techStack li {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  border: 0.1rem solid #ffffffac;
+}
+
+.container .work .modal .modal-content .description {
+  margin: 1rem 0;
+}
+
+.container .work .modal .modal-content .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .work .modal .modal-content .projectLinks a {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  border: 0.1rem solid #ffffffac;
 }
 /*# sourceMappingURL=style.css.map */
