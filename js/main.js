@@ -23,7 +23,9 @@ const skillSection = document.querySelector(".skills");
 
 //work
 const workSection = document.querySelector(".work");
-const projectImg = document.querySelector(".projectImg");
+const projectImg = document.querySelectorAll(".projectImg");
+const modal = document.querySelectorAll(".modal");
+const clsBtn = document.querySelectorAll(".clsBtn");
 
 //contact
 const contactSection = document.querySelector(".contact");
@@ -125,8 +127,21 @@ backToAboutBtn.addEventListener("click", () => {
 });
 
 /* ========= Work ========= */
-projectImg.addEventListener("click", () => {
-  //show modal
-  console.log("image clicked");
-});
+for (let i = 0; i < projectImg.length; i++) {
+  projectImg[i].addEventListener("click", () => {
+    modal[i].style.display = "block";
+  });
+}
+
+for (let i = 0; i < clsBtn.length; i++) {
+  clsBtn[i].addEventListener("click", () => {
+    modal[i].style.display = "none";
+  });
+}
+
+for (let i = 0; i < modal.length; i++) {
+  modal[i].addEventListener("click", () => {
+    modal[i].style.display = "none";
+  });
+}
 
