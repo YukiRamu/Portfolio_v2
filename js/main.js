@@ -88,7 +88,7 @@ viewFullProfBtn.addEventListener("click", () => {
   contactSection.style.display = "none";
   //slide
   intro.style.transform = "translateX(165%)";
-  intro.style.opacity = "0";
+  intro.style.display = "none";
   intro.style.transition = "1s linear";
   photo.style.opacity = "0";
   photo.style.transform = "translateY(165%)";
@@ -115,7 +115,7 @@ backToAboutBtn.addEventListener("click", () => {
 
   //slide back to about sections
   intro.style.transform = "translateX(-1%)";
-  intro.style.opacity = "1";
+  intro.style.display = "block";
   intro.style.transition = "1.5s linear";
   photo.style.transform = "translateY(0%)";
   photo.style.opacity = "1";
