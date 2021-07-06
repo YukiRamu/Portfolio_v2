@@ -79,6 +79,7 @@ window.addEventListener("DOMContentLoaded", () => {
 //"see full profile" button clicked
 viewFullProfBtn.addEventListener("click", () => {
   smoothScroll("fullProf");
+  fullProf.classList.add("showProf");
   //hide all sections
   navBar.style.display = "none";
   openingSection.style.display = "none";
@@ -90,11 +91,13 @@ viewFullProfBtn.addEventListener("click", () => {
   intro.style.transform = "translateX(165%)";
   intro.style.display = "none";
   intro.style.transition = "1s linear";
-  photo.style.opacity = "0";
+  // photo.style.opacity = "0";
+  photo.style.display = "none";
   photo.style.transform = "translateY(165%)";
   photo.style.transition = "1s linear";
   fullProf.style.transform = "translateX(1%)";
   fullProf.style.transition = "1s linear";
+  fullProf.style.paddingTop = "5%";
   //clear padding top
   aboutSection.style.paddingTop = "0";
 });
@@ -102,7 +105,7 @@ viewFullProfBtn.addEventListener("click", () => {
 //"Back" buton clicked
 backToAboutBtn.addEventListener("click", () => {
   smoothScroll("intro");
-
+  fullProf.classList.remove("showProf");
   //show all sections
   navBar.style.display = "flex";
   navBar.style.opacity = "1";
@@ -116,7 +119,8 @@ backToAboutBtn.addEventListener("click", () => {
   intro.style.display = "block";
   intro.style.transition = "1s linear";
   photo.style.transform = "translateY(0%)";
-  photo.style.opacity = "1";
+  // photo.style.opacity = "1";
+  photo.style.display = "block";
   photo.style.transition = "1s linear";
   fullProf.style.transform = "translateX(-100%)";
   fullProf.style.transition = "1s linear";
