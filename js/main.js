@@ -110,18 +110,16 @@ backToAboutBtn.addEventListener("click", () => {
   skillSection.style.display = "block";
   workSection.style.display = "block";
   contactSection.style.display = "block";
-  // workSection.style.display = "flex";
-  // contactSection.style.display = "flex";
 
   //slide back to about sections
   intro.style.transform = "translateX(-1%)";
   intro.style.display = "block";
-  intro.style.transition = "1.5s linear";
+  intro.style.transition = "1s linear";
   photo.style.transform = "translateY(0%)";
   photo.style.opacity = "1";
-  photo.style.transition = "1.5s linear";
+  photo.style.transition = "1s linear";
   fullProf.style.transform = "translateX(-100%)";
-  fullProf.style.transition = "1.5s linear";
+  fullProf.style.transition = "1s linear";
   //add padding top
   aboutSection.style.paddingTop = "30px";
 });
