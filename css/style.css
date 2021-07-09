@@ -36,7 +36,7 @@ a:hover {
   color: #161c14;
 }
 
-/*Media Query - mobile first breakpoints*/
+/* Media Query - mobile first breakpoints */
 body.modal-active {
   overflow: hidden;
 }
@@ -452,6 +452,10 @@ body.modal-active {
 
 .container .contact a {
   margin-bottom: 1rem;
+}
+
+.container .contact a i {
+  margin-right: 0.3rem;
 }
 
 .container .contact .links {
