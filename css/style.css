@@ -98,6 +98,12 @@ body.modal-active {
   font-size: 1.5rem;
 }
 
+@media (min-width: 992px) {
+  .container .opening .typingText {
+    font-size: 4rem;
+  }
+}
+
 .container .opening .flaticon-down-sketched-arrow {
   opacity: 0;
   position: absolute;
@@ -106,6 +112,12 @@ body.modal-active {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .container .opening .flaticon-down-sketched-arrow {
+    font-size: 4rem;
+  }
 }
 
 .container .about,
@@ -126,6 +138,16 @@ body.modal-active {
   padding: 1rem 1rem 1rem 1rem;
   z-index: 1;
   margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .container .about .intro {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 60vw;
+    padding-left: 3rem;
+  }
 }
 
 .container .about .intro h4 {
@@ -152,10 +174,24 @@ body.modal-active {
   width: 100%;
 }
 
+@media (min-width: 992px) {
+  .container .about .photo {
+    width: 50vw;
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
 .container .about .photo img {
   width: 100%;
   padding: 1rem;
   overflow-y: hidden;
+}
+
+@media (min-width: 992px) {
+  .container .about .photo img {
+    width: 50vw;
+  }
 }
 
 .container .about .fullProf {
@@ -373,6 +409,12 @@ body.modal-active {
           transform: translate(-50%, -50%);
   padding: 2rem 1rem;
   background-color: rgba(0, 0, 0, 0.71);
+}
+
+@media (min-width: 992px) {
+  .container .work .modal .modal-content {
+    border: 4rem solid #0000;
+  }
 }
 
 .container .work .modal .modal-content .projectTitle {

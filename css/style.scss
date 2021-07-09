@@ -44,14 +44,18 @@ body {
       -moz-background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      //font-size: 4rem; ---for laptop
+      @include lg {
+        font-size: 4rem;
+      }
       width: 100%;
       padding: 4rem;
       font-size: 1.5rem;
     }
     .flaticon-down-sketched-arrow {
       opacity: 0;
-      //font-size: 4rem; ---for laptop
+      @include lg {
+        font-size: 4rem;
+      }
       position: absolute;
       bottom: 5%;
       left: 50%;
@@ -75,11 +79,13 @@ body {
       padding: 1rem 1rem 1rem 1rem;
       z-index: 1;
       margin-right: auto;
-      // position: absolute;  --- for laptop
-      // left: 0;  --- for laptop
-      // top: 10%; --- for laptop
-      // width: 60vw;  --- for laptop
-      // padding-left: 3rem;  --- for laptop
+      @include lg {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 60vw;
+        padding-left: 3rem;
+      }
       h4 {
         margin-bottom: 1rem;
       }
@@ -101,12 +107,17 @@ body {
     }
     .photo {
       width: 100%;
-      // width: 50vw; -- for laptop
-      // text-align: right; -- for laptop
+      @include lg {
+        width: 50vw;
+        text-align: right;
+        margin-left: auto;
+      }
       img {
         width: 100%;
         padding: 1rem;
-        // width: 50vw; -- for laptop
+        @include lg {
+          width: 50vw;
+        }
         overflow-y: hidden;
       }
     }
@@ -297,8 +308,9 @@ body {
         // height: 100%;
         padding: 2rem 1rem;
         background-color: $blackTr;
-        //for laptop
-        //    border: 4rem solid #0000;
+        @include lg {
+          border: 4rem solid #0000;
+        }
         .projectTitle {
           display: flex;
           flex-direction: row;
