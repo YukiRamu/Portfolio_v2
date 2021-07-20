@@ -86,6 +86,20 @@ body {
         width: 60vw;
         padding-left: 3rem;
       }
+      @include xl {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 60vw;
+        padding-left: 3rem;
+      }
+      @include xxl {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 60vw;
+        padding-left: 3rem;
+      }
       h4 {
         margin-bottom: 1rem;
       }
@@ -141,6 +155,7 @@ body {
         font-weight: bold;
         text-shadow: 0.5rem 0.5rem 0.3rem $color4; //text shadow: should be px?
         margin-bottom: 2rem;
+        margin-top: 30px;
       }
       h3 {
         color: $color6;
@@ -177,6 +192,18 @@ body {
         ul {
           list-style: none;
           li {
+            @include md {
+              font-size: 1.5rem;
+            }
+            @include lg {
+              font-size: 1.5rem;
+            }
+            @include xl {
+              font-size: 1.5rem;
+            }
+            @include xxl {
+              font-size: 1.5rem;
+            }
             i {
               margin-right: 0.5rem;
             }
@@ -206,6 +233,9 @@ body {
     background-position: unset;
     background-repeat: no-repeat;
     background-size: cover;
+    @include sm {
+      padding-bottom: 1rem;
+    }
     h2 {
       //color: $color6;
       margin: 1rem 0;
@@ -217,11 +247,11 @@ body {
     .card {
       position: relative;
       display: block;
-      margin: 1rem;
+      margin: 2rem 1rem;
       border: none;
       padding: 1rem;
       background-color: $color3Tr;
-      height: 20vh;
+      height: fit-content;
       border-left: 1rem $color4 solid;
       text-align: center;
       h3 {
@@ -235,20 +265,25 @@ body {
     }
     .frontEnd {
       .skillIcon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
         width: 100%;
+        grid-gap: 1rem;
       }
     }
     .devTool {
       background-color: $color7Tr;
       .toolIcon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         width: 100%;
       }
     }
@@ -256,13 +291,53 @@ body {
       ul {
         list-style: none;
         padding: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        @include sm {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          grid-gap: 1rem;
+          align-items: center;
+        }
+        @include lg {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          grid-gap: 1rem;
+          align-items: center;
+        }
+        @include xl {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          grid-gap: 1rem;
+          align-items: center;
+        }
+        @include xxl {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          grid-gap: 1rem;
+          align-items: center;
+        }
         width: 100%;
         li {
           color: $black;
+          @include md {
+            font-size: 1.5rem;
+          }
+          @include lg {
+            font-size: 1.5rem;
+          }
+          @include xl {
+            font-size: 1.5rem;
+          }
+          @include xxl {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -351,20 +426,6 @@ body {
             border: 0.1rem solid $color1Tr;
           }
         }
-        //   display: flex;
-        //   flex-direction: column;
-        //   position: absolute;
-        //   top: 50%;
-        //   left: 50%;
-        //   transform: translate(-50%, -50%);
-        //   background-color: $color4Tr;
-        //   height: 50%;
-
-        //   .viewWorkBtn {
-        //     width: fit-content;
-        //     margin: auto;
-        //   }
-        // }
       }
     }
   }

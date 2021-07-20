@@ -150,6 +150,26 @@ body.modal-active {
   }
 }
 
+@media (min-width: 1200px) {
+  .container .about .intro {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 60vw;
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container .about .intro {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 60vw;
+    padding-left: 3rem;
+  }
+}
+
 .container .about .intro h4 {
   margin-bottom: 1rem;
 }
@@ -205,6 +225,11 @@ body.modal-active {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  z-index: 1;
+}
+
+.container .about .fullProf.showProf {
+  padding-top: 0 !important;
 }
 
 .container .about .fullProf h2 {
@@ -212,6 +237,7 @@ body.modal-active {
   font-weight: bold;
   text-shadow: 0.5rem 0.5rem 0.3rem #7a392c;
   margin-bottom: 2rem;
+  margin-top: 30px;
 }
 
 .container .about .fullProf h3 {
@@ -260,6 +286,30 @@ body.modal-active {
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .container .about .fullProf .careerPanel ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container .about .fullProf .careerPanel ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .about .fullProf .careerPanel ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container .about .fullProf .careerPanel ul li {
+    font-size: 1.5rem;
+  }
+}
+
 .container .about .fullProf .careerPanel ul li i {
   margin-right: 0.5rem;
 }
@@ -290,6 +340,12 @@ body.modal-active {
   background-size: cover;
 }
 
+@media (min-width: 576px) {
+  .container .skills {
+    padding-bottom: 1rem;
+  }
+}
+
 .container .skills h2 {
   margin: 1rem 0;
   font-weight: bold;
@@ -301,11 +357,13 @@ body.modal-active {
 .container .skills .card {
   position: relative;
   display: block;
-  margin: 1rem;
+  margin: 2rem 1rem;
   border: none;
   padding: 1rem;
   background-color: #b56b169d;
-  height: 20vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-left: 1rem #7a392c solid;
   text-align: center;
 }
@@ -313,6 +371,7 @@ body.modal-active {
 .container .skills .card h3 {
   color: #7a392c;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .container .skills .card i {
@@ -320,12 +379,21 @@ body.modal-active {
 }
 
 .container .skills .frontEnd .skillIcon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  grid-gap: 1rem;
 }
 
 .container .skills .devTool {
@@ -333,27 +401,117 @@ body.modal-active {
 }
 
 .container .skills .devTool .toolIcon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 100%;
 }
 
 .container .skills .deployment ul {
   list-style: none;
   padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container .skills .deployment ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .container .skills .deployment ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .skills .deployment ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container .skills .deployment ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .container .skills .deployment ul li {
   color: black;
+}
+
+@media (min-width: 768px) {
+  .container .skills .deployment ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container .skills .deployment ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .skills .deployment ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container .skills .deployment ul li {
+    font-size: 1.5rem;
+  }
 }
 
 .container .work {
@@ -398,7 +556,7 @@ body.modal-active {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.738);
 }
 
 .container .work .modal .modal-content {
@@ -408,7 +566,7 @@ body.modal-active {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 2rem 1rem;
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0, 0.793);
 }
 
 @media (min-width: 992px) {
@@ -506,5 +664,6 @@ body.modal-active {
 
 .container .contact .credit {
   padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

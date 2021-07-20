@@ -69,7 +69,7 @@ a {
   }
 }
 
-// Large devices (desktops, 992px and up) -- working on it
+// Large devices (desktops, 992px and up)
 @mixin lg {
   @media (min-width: 992px) {
     @content;
