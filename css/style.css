@@ -338,6 +338,7 @@ body.modal-active {
   background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -396,6 +397,7 @@ body.modal-active {
   width: -moz-fit-content;
   width: fit-content;
   grid-gap: 1rem;
+  margin: auto;
 }
 
 .container .skills .devTool {
