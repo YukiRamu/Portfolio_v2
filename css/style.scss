@@ -39,7 +39,6 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-      //background-image: url(https://i.gifer.com/TTSO.gif);
       background-size: cover;
       -moz-background-clip: text;
       -webkit-background-clip: text;
@@ -106,7 +105,7 @@ body {
       h1 {
         margin-bottom: 1rem;
         font-weight: bold;
-        text-shadow: 0.5rem 0.5rem 0 $color6; //text shadow: should be px?
+        text-shadow: 0.5rem 0.5rem 0 $color6;
       }
       h3 {
         margin-bottom: 2rem;
@@ -153,7 +152,7 @@ body {
       h2 {
         color: $color6;
         font-weight: bold;
-        text-shadow: 0.5rem 0.5rem 0.3rem $color4; //text shadow: should be px?
+        text-shadow: 0.5rem 0.5rem 0.3rem $color4;
         margin-bottom: 2rem;
         margin-top: 30px;
       }
@@ -216,7 +215,6 @@ body {
         color: $color2;
         border: none;
         padding: 0.5rem 1rem;
-        // font-size: 1.5rem;
         width: fit-content;
         &:hover {
           background-color: $color4;
@@ -237,10 +235,9 @@ body {
       padding-bottom: 1rem;
     }
     h2 {
-      //color: $color6;
       margin: 1rem 0;
       font-weight: bold;
-      text-shadow: 0.5rem 0.5rem 0.1rem $color6; //text shadow: should be px?
+      text-shadow: 0.5rem 0.5rem 0.1rem $color6;
       text-align: center;
       font-weight: bold;
     }
@@ -265,10 +262,6 @@ body {
     }
     .frontEnd {
       .skillIcon {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -280,10 +273,6 @@ body {
     .devTool {
       background-color: $color7Tr;
       .toolIcon {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         width: 100%;
       }
     }
@@ -291,10 +280,6 @@ body {
       ul {
         list-style: none;
         padding: 0;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         @include sm {
           display: flex;
           flex-direction: row;
@@ -345,10 +330,9 @@ body {
   /* Work */
   .work {
     h2 {
-      //color: $color6;
       margin: 1rem 0;
       font-weight: bold;
-      text-shadow: 0.5rem 0.5rem 0.1rem $color6; //text shadow: should be px?
+      text-shadow: 0.5rem 0.5rem 0.1rem $color6; 
       text-align: center;
       font-weight: bold;
     }
@@ -438,7 +422,7 @@ body {
     h2 {
       margin: 1rem 0;
       font-weight: bold;
-      text-shadow: 0.5rem 0.5rem 0.1rem $color6; //text shadow: should be px?
+      text-shadow: 0.5rem 0.5rem 0.1rem $color6; 
       text-align: center;
       font-weight: bold;
     }
