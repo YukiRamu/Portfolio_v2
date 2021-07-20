@@ -392,7 +392,9 @@ body.modal-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   grid-gap: 1rem;
 }
 
